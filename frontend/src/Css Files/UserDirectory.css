@@ -1,0 +1,145 @@
+.directory-sidebar {
+  width: 260px;
+  background-color: #202940; 
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  box-shadow: 4px 0 10px rgba(0,0,0,0.05);
+  z-index: 10;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.sidebar-brand h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.directory-sidebar h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #8f9bb3;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  letter-spacing: 1px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.search-input {
+  background-color: #1a2235;
+  border: 1px solid #2e3a59;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #8f9bb3;
+}
+
+.search-input:focus {
+  border-color: #5D87FF;
+}
+
+.online-toggle {
+  font-size: 0.85rem;
+  color: #8f9bb3;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  margin-bottom: 5px;
+}
+
+.user-item:hover {
+  background-color: #2e3a59;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.request-btn {
+  background-color: transparent;
+  border: 1px solid #5D87FF;
+  color: #5D87FF;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.request-btn:hover {
+  background-color: #5D87FF;
+  color: white;
+}
+
+.request-btn.accepted {
+  background-color: #00d68f;
+  border-color: #00d68f;
+  color: white;
+}
+
+.pending-text {
+  font-size: 0.75rem;
+  color: #ffaa00;
+}
+
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.status-dot.online {
+  background-color: #00d68f;
+  box-shadow: 0 0 6px rgba(0, 214, 143, 0.6);
+}
+
+.status-dot.offline {
+  background-color: #ff3d71; 
+}
